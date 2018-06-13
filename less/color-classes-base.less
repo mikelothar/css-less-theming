@@ -1,0 +1,29 @@
+@import (reference) "colors-base.less";
+
+.avalon-area {
+  .cssVariables();
+
+  [component-colors="primary"] {
+    .componentColorsPrimary();
+  }
+
+  a[component-colors="primary"] {
+    .linkComponentColorsPrimary();
+  }
+
+  .u-text--white {
+    .colorWhite();
+  }
+
+  .u-text--black {
+    .colorBlack();
+  }
+
+  .u-background--white {
+    .backgroundWhite();
+  }
+
+  .u-background--black {
+    .backgroundBlack();
+  }
+}

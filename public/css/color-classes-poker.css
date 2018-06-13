@@ -1,0 +1,36 @@
+.avalon-area {
+  --color-text--primary: black;
+  --color-link--primary: black;
+  --color-background--primary: #feb700;
+  --color-background--primary-dark: #eaa900;
+  --color-text--secondary: white;
+  --color-link--secondary: #feb700;
+  --color-background--secondary: #12121A;
+  --color-background--secondary-dark: black;
+}
+.avalon-area [component-colors="primary"] {
+  color: black;
+  color: var(--color-text--primary);
+  background-color: #feb700;
+  background-color: var(--color-background--primary);
+}
+.avalon-area [component-colors="primary"] a:not([class]) {
+  color: black;
+  color: var(--color-link--primary);
+}
+.avalon-area a[component-colors="primary"]:hover {
+  background-color: #eaa900;
+  background-color: var(--color-background--primary-dark);
+}
+.avalon-area .u-text--white {
+  color: white;
+}
+.avalon-area .u-text--black {
+  color: black;
+}
+.avalon-area .u-background--white {
+  background-color: white;
+}
+.avalon-area .u-background--black {
+  background-color: black;
+}
