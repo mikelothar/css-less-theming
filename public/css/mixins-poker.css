@@ -1,0 +1,57 @@
+.cssVariables {
+  --color-text--primary: black;
+  --color-link--primary: black;
+  --color-background--primary: #feb700;
+  --color-background--primary-dark: #eaa900;
+  --color-text--secondary: white;
+  --color-link--secondary: #feb700;
+  --color-background--secondary: #12121A;
+  --color-background--secondary-dark: black;
+}
+.componentColorsPrimary {
+  color: black;
+  color: var(--color-text--primary);
+  background-color: #feb700;
+  background-color: var(--color-background--primary);
+}
+.componentColorsPrimary a:not([class]) {
+  color: black;
+  color: var(--color-link--primary);
+}
+.linkComponentColorsPrimary:hover {
+  background-color: #eaa900;
+  background-color: var(--color-background--primary-dark);
+}
+.componentColorsSecondary {
+  color: white;
+  color: var(--color-text--secondary);
+  background-color: #12121A;
+  background-color: var(--color-background--secondary);
+}
+.componentColorsSecondary a:not([class]) {
+  color: #feb700;
+  color: var(--color-link--secondary);
+}
+.colorWhite {
+  color: white;
+}
+.colorBlack {
+  color: black;
+}
+.colorYellow {
+  color: #feb700;
+}
+.colorPrimary {
+  color: #feb700;
+  color: var(--color-background--primary);
+}
+.colorSecondary {
+  color: #12121A;
+  color: var(--color-background--secondary);
+}
+.backgroundWhite {
+  background-color: white;
+}
+.backgroundBlack {
+  background-color: black;
+}

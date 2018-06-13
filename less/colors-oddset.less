@@ -1,4 +1,4 @@
-@import (reference) "ds-colors";
+@import (reference) "colors-ds";
 
 @color-text--primary: black;
 @color-link--primary: black;
@@ -8,77 +8,3 @@
 @color-link--secondary: @color-yellow-100;
 @color-background--secondary: #1a4e98;
 @color-background--secondary-dark: #093d8c;
-
-// don't change anything below unless you change it in the other
-// variables-[domain].less files also, to maintain persistency.
-.cssVariables {
-  --color-text--primary: @color-text--primary;
-  --color-link--primary: @color-link--primary;
-  --color-background--primary: @color-background--primary;
-  --color-background--primary-dark: @color-background--primary-dark;
-  --color-text--secondary: @color-text--secondary;
-  --color-link--secondary: @color-link--secondary;
-  --color-background--secondary: @color-background--secondary;
-  --color-background--secondary-dark: @color-background--secondary-dark;
-}
-
-.componentColorsPrimary {
-  color: @color-text--primary;
-  color: var(--color-text--primary);
-  background-color: @color-background--primary;
-  background-color: var(--color-background--primary);
-
-  a:not([class]) {
-    color: @color-link--primary;
-    color: var(--color-link--primary);
-  }
-}
-
-.linkComponentColorsPrimary {
-  &:hover {
-    background-color: @color-background--primary-dark;
-    background-color: var(--color-background--primary-dark);
-  }
-}
-
-.componentColorsSecondary {
-  color: @color-text--secondary;
-  color: var(--color-text--secondary);
-  background-color: @color-background--secondary;
-  background-color: var(--color-background--secondary);
-
-  a:not([class]) {
-    color: @color-link--secondary;
-    color: var(--color-link--secondary);
-  }
-}
-
-.colorWhite {
-  color: @color-white;
-}
-
-.colorBlack {
-  color: @color-black;
-}
-
-.colorYellow {
-  color: @color-yellow-100;
-}
-
-.colorPrimary {
-  color: @color-background--primary;
-  color: var(--color-background--primary);
-}
-
-.colorSecondary {
-  color: @color-background--secondary;
-  color: var(--color-background--secondary);
-}
-
-.backgroundWhite {
-  background-color: @color-white;
-}
-
-.backgroundBlack {
-  background-color: @color-black;
-}
