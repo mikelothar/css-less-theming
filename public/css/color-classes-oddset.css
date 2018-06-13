@@ -22,11 +22,32 @@
   background-color: #eaa900;
   background-color: var(--color-background--primary-dark);
 }
+.avalon-area [component-colors="secondary"] {
+  color: white;
+  color: var(--color-text--secondary);
+  background-color: #1a4e98;
+  background-color: var(--color-background--secondary);
+}
+.avalon-area [component-colors="secondary"] a:not([class]) {
+  color: #feb700;
+  color: var(--color-link--secondary);
+}
 .avalon-area .u-text--white {
   color: white;
 }
 .avalon-area .u-text--black {
   color: black;
+}
+.avalon-area .u-text--yellow {
+  color: #feb700;
+}
+.avalon-area .u-text--primary {
+  color: #feb700;
+  color: var(--color-background--primary);
+}
+.avalon-area .u-text--secondary {
+  color: #1a4e98;
+  color: var(--color-background--secondary);
 }
 .avalon-area .u-background--white {
   background-color: white;
